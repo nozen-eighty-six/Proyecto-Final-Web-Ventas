@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pagina</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu container1">
+        <a href="index.html" class="logo">TOP MODA</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="images/menu.png" alt="menu" class="menu-icono" />
+        </label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="general.html">Productos</a></li>
+            <li><a href="contactos.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="imgcarrito">
+          <ul>
+            <li class="submenu">
+              <img src="images/car.svg" id="img-carrito" alt="carrito" href="carrito.html"/>
+            </li>
+          </ul>
+        </div>
+        <div class="card-container">
+            <div class="ingresar" id="ingresarContainer">
+                <a href="login2.html"><img src="images/ingresar.png" id="ingresar" ></a>
+            </div>
+            <div class="usuario" id="usuarioContainer" style="display: none;">
+                <img src="images/user.png" id="openCardBtn">
+            </div>
+            <div class="card" id="card">
+                <header class="card-header">
+                    <h1>TOP MODA</h1>
+                </header>
+                <section class="datos">
+                    <h2>Usuario</h2>
+                    <span id="usuarioCorreo">Usuario@gmail.com</span>
+                </section>
+                <section class="cerrarsesion">
+                    <a id="cerrarSesionBtn" class="cerrarsesion btn"><img src="images/close.svg" class="user-icons" id="close">Cerra sesión</a>
+                </section>
+            </div>
+        </div>       
+      </div>
+      <div class="header-content container">
+        <div class="header-img">
+            <img src="images/hombre.png" alt="">
+        </div>
+        <div class="header-txt">
+            <h1>Ofertas especiales</h1>
+            <p>Estrena las mejores prendas</p>
+            <a href="general.html" class="btn-1" >Información</a>
+        </div>
+      </div>
+    </header>    
+    <main class="products container" id="lista-1">
+        <h2>Productos</h2>
+        <div class="slider">
+            <div class="slider-products">
+                <div class="product active">
+                    <div class="product-img">
+                        <img class="img" src="images/sobrecamisa-arica.webp" alt="">
+                    </div>
+                    <div class="product-txt">
+                        <h3>Sobrecamisa Shacket</h3>
+
+                        <a href="product-camisa.html" class="informacion btn-2">Información</a>         
+                    </div>
+                </div>
+    
+                <div class="product">
+                    <div class="product-img">
+                        <img class="img" src="images/casaca-vaquera.webp" alt="">
+
+                    </div>
+                    <div class="product-txt">
+                        <h3>Casaca Bomber</h3>
+                        <a href="product-casaca.html" class="btn-2">Información</a>        
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <img class="img" src="images/gorra-flex.jpg" alt="">
+
+                    </div>
+                    <div class="product-txt">
+                        <h3>Gorra Pinnacle</h3>
+
+                        <a href="product-gorra.html" class="btn-2">Información</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <img class="img" src="images/polo-drymove-2.png" alt="">
+
+                    </div>
+                    <div class="product-txt">
+                        <h3>Polo Sport</h3>
+
+                        <a href="product-polo.html" class="btn-2">Información</a>        
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <img class="img" src="images/zapatilla-nike-3.jpg" alt="">
+
+                    </div>
+                    <div class="product-txt">
+                        <h3>Zapatillas Urbanas</h3>
+                        <a href="product-zapatilla.html" class="btn-2">Información</a>        
+                    </div>
+                </div>
+            </div>
+            <div class="slider-btns">
+                <a class="prev" href="#">
+                    <img src="/images/icono-back.svg" alt="back">
+                </a>
+                <a class="next" href="#">
+                    <img src="/images/icono-next.svg" alt="next">
+                </a>
+              </div>
+            
+        </div>
+    </main>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/1.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Camisas</h3>
+                <a href="product-camisa.html" class="btn-2">Información</a>
+            </div>
+        </div>
+
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/casaca-demin.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Casacas</h3>
+                <a href="product-casaca.html" class="btn-2">Información</a>
+            </div>
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="images/gorra-fox2.png" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Gorras</h3>
+                <a href="product-gorra.html" class="btn-2">Información</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="icons container">
+        <a href="product-hombre.html" class="icon-1">
+            <div class="icon-img">
+                <img src="images/i1.svg" alt="" id="_1">
+            </div>
+            <div class="icon-txt">
+                Hombre
+            </div>
+        </a>
+    
+        <a href="product-mujer.html" class="icon-1">
+            <div class="icon-img">
+                <img src="images/i2.svg" alt="" id="_2">
+            </div>
+            <div class="icon-txt">
+                Mujer
+            </div>
+        </a>
+    
+        <a href="product-bebes.html" class="icon-1">
+            <div class="icon-img">
+                <img src="images/stroller.png" alt="" id="_3">
+            </div>
+            <div class="icon-txt">
+                Bebes
+            </div>
+        </a>
+        
+        <a href="product-niños.html" class="icon-1">
+            <div class="icon-img">
+                <img src="images/i3.svg" alt="" id="_4">
+            </div>
+            <div class="icon-txt">
+                Niños
+            </div>
+        </a>
+
+        <a href="product-sport.html" class="icon-1">
+            <div class="icon-img">
+                <img src="images/shoe.png" alt="" id="_5">
+            </div>
+            <div class="icon-txt">
+                Sport
+            </div>
+        </a>
+
+        <a href="product-accesorios.html" class="icon-1">
+            <div class="icon-img">
+                <img src="images/bracelet.png" alt="" id="_6">
+            </div>
+            <div class="icon-txt">
+                Accesorios
+            </div>
+        </a>
+    </section>
+
+
+    <section class="blog container"> 
+
+        <div class="blog-1">
+
+            <img src="images/b1.jpg" alt="">
+            <h3>Las tendencias más recientes en moda urbana</h3>
+            <p>Descubre las últimas colecciones y tendencias que marcan la pauta en el mundo de la moda urbana.</p>
+        </div>
+        <div class="blog-1">
+
+            <img src="images/b2.jpg" alt="">
+            <h3>Consejos para combinar tus prendas favoritas</h3>
+            <p>Aprende a crear looks únicos y estilosos combinando diferentes prendas de nuestra colección.</p>
+        </div>
+        <div class="blog-1">
+
+            <img src="images/b3.jpg" alt="">
+            <h3>La historia detrás de nuestras exclusivas gorras Pinnacle</h3>
+            <p>Descubre cómo se fabrican nuestras famosas gorras Tech Flexfit y qué las hace tan especiales.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Dirección: Av. Prolongacion Javier Prado 9515</li>
+                    <li>Teléfono: 994001450</li>
+                    <li>RUC: 10253061647</li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Horario de Atención</h3>
+                <ul>
+                    <li>Lunes a Viernes: 9:00 AM - 8:00 PM</li>
+                    <li>Sábados y Domingos: 10:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Servicios</h3>
+                <ul>
+                    <li>Envíos a domicilio disponibles</li>
+                    <li>Amplia variedad de tallas y estilos</li>
+                    <li>Promociones especiales para clientes frecuentes</li>
+                </ul>
+            </div>            
+        </div>
+    </footer>
+    <script src="scrip.js"></script>
+    <script src="slider.js"></script>
+  </body>
+</html>

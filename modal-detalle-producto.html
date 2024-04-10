@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="moda-detalle-producto.css" />
+
+  </head>
+  <body>
+    <section class="modal">
+      <div class="modal__border">
+        <div class="modal__container">
+         
+          <div class="modal__img">
+            <img src="/images/1.png" alt="1_png" />
+          </div>
+
+          <div class="modal__content">
+            <h2 class="modal__title">Nombre del producto</h2>
+            <p class="modal__description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              voluptates.
+            </p>
+            <p class="modal__price">$100.00</p>
+            <div class="content__talla">
+              <label for="cbotalla">Talla</label>
+              <select name="cbotalla" id="">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+              </select>
+            </div>
+            <div class="content__button">
+                <a
+              href="/carrito"
+              class="link-carrito btn2 none"
+              id="modal-agregar"
+              th:unless="${sesion==null}"
+            >
+              Ir al carrito
+            </a>
+
+            <a
+              href="#"
+              class="agregar-barrito btn2 none"
+              id="modal-agregar"
+              th:unless="${sesion==null}"
+            >
+              Agregar al carrito
+            </a>
+            </div>
+          </div>
+        </div>
+        <button class="cerrar-modal">X</button>
+      </div>
+    </section>
+  </body>
+</html>
